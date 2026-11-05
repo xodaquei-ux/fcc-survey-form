@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+    <h1 id="title">Gamer Survey</h1>
+    <p id="description">Thank you for helping us improve the plataform</p>
+    </header>
+    <form id="survey-form">
+      <div class="personal-info">
+      <label for="name-label" id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="personal-info">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="personal-info">
+        <label for="age" id="number-label">Age (optional)</label>
+        <input type="number" id="number" name="age"
+        placeholder="Age" min="7" max="100">
+      </div>
+      <!-- Study Note: Temporary use of <br> tags for layout spacing. 
+     Future updates will replace these with CSS (Flexbox/Grid) for better practice. -->
+      <br>
+      <label for="dropdown">What is your favorite video game genre?</label>
+      <br>
+     <select id="dropdown">
+      <option disabled selected value="">Select your favorite genre</option>
+      <option value="rpg">RPG</option>
+      <option value="action">Action</option>
+      <option value="fps">FPS</option>
+      <option value="strategy">Strategy</option>
+     </select>
+     <br>
+     <br>
+     <label>What is your main platform?</label>
+     <br>
+      <label for="pc">
+     <input type="radio" id="pc" name="platform" value="pc">
+     Pc</label>
+
+     <label for="console">
+<input type="radio" id="console" name="platform" value="console">
+Console</label>
+
+     <label for="mobile">
+<input type="radio" id="mobile" name="platform" value="mobile">Mobile
+</label>
+<br>
+<br>
+<label for="frequency">How often do you play video games?</label>
+<br>
+<select id="frequency">
+  <option disabled selected value="">Select your frequency</option>
+  <option value="daily">Every day</option>
+  <option value="weekly">A few times a week</option>
+  <option value="rarely">Only on weekends / Rarely</option>
+</select>
+<br>
+<br>
+<label>What features do you value the most? (Check all that apply)</label>
+<br>
+
+<input type="checkbox" id="story" name="features" value="story">
+<label for="story">Immersive Story</label>
+<br>
+
+<input type="checkbox" id="gameplay" name="features" value="gameplay">
+<label for="gameplay">Challenging Gameplay</label>
+<br>
+
+<input type="checkbox" id="graphics" name="features" value="graphics">
+<label for="graphics">Amazing Graphics</label>
+<br>
+
+<textarea cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+<br>
+<button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
